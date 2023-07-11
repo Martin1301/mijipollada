@@ -98,19 +98,7 @@ export default function Menu() {
                 </span>
               </a>
             </li>
-            <li>
-              <a href="#sugar-mijirrito" className="">
-                <span className="icon">
-                  <i>
-                    <Image
-                      src={"/img/icons/sugar-mijirrito.png"}
-                      width={35}
-                      height={0}
-                      alt="icon cronometro"></Image>
-                  </i>
-                </span>
-              </a>
-            </li>
+
             <li>
               <span className="icon">
                 <i className="">
@@ -176,22 +164,7 @@ export default function Menu() {
               </span>
             </a>
           </li>
-          <li>
-            <a href="#sugar-mijirrito" className="">
-              <span className="icon">
-                <i>
-                  <Image
-                    src={"/img/icons/sugar-mijirrito.png"}
-                    width={25}
-                    height={0}
-                    alt="icon cronometro"></Image>
-                </i>
-              </span>
-              <span className="title font-boogaloo tracking-tighter">
-                Sugar Mijirrito
-              </span>
-            </a>
-          </li>
+
           <li>
             <span className="icon">
               <i className="">
@@ -225,7 +198,7 @@ export default function Menu() {
                 height={0}
                 alt="img miji pollada"></Image>
             </div> */}
-            <div className="mb-12">
+            <div className="mb-12 ">
               <div
                 id="fecha"
                 className="font-bungee md:text-[52px] text-[48px] tracking-tighter md:pb-7 pb-7">
@@ -236,6 +209,16 @@ export default function Menu() {
                 className="font-bungee md:text-[52px] text-[48px] tracking-tighter md:pb-8 pb-12">
                 {countdown.minutes} Min. - {countdown.seconds} Seg.
               </div>
+              <div
+                id="fecha3"
+                className="font-bungee md:text-[52px] text-[48px] tracking-tighter md:pb-7 pb-7 hidden">
+                {countdown.days} Días.<br></br> {countdown.hours} Hor.
+              </div>
+              <div
+                id="fecha4"
+                className="font-bungee md:text-[52px] text-[48px] tracking-tighter md:pb-8 pb-12 hidden">
+                {countdown.minutes} Min. <br></br> {countdown.seconds} Seg.
+              </div>
             </div>
             <Image
               className="diversion-mijipollada"
@@ -245,9 +228,35 @@ export default function Menu() {
               alt="img diversion pollada"></Image>
           </div>
         </div>
-        <div id="comprar-entrada" className="item"></div>
+        <div id="comprar-entrada" className="item">
+          <div className="grid grid-cols-1 md:grid-cols-2 justify-center items-center text-center mt-24 sm:mt-0">
+            <Image
+              className="m-auto"
+              src={"/img/precios.png"}
+              width={500}
+              height={0}
+              alt="img entradas"></Image>
+            <div>
+              <a
+                href="https://www.joinnus.com/events/festivales/lima-miji-pollada-bailable-ioa-55382"
+                target="_blank">
+                <Image
+                  className="h-20 pl-5 m-auto mt-0 md:mt-10"
+                  src={"/img/btn-comprar.png"}
+                  width={400}
+                  height={5}
+                  alt="img entradas"></Image>
+              </a>
+              <Image
+                className="mt-5 w-0 h-40 pl-5 m-auto md:w-40"
+                src={"/img/pinky-bear.png"}
+                width={500}
+                height={5}
+                alt="img entradas"></Image>
+            </div>
+          </div>
+        </div>
         <div id="ubicacion" className="item"></div>
-        <div id="sugar-mijirrito" className="item"></div>
       </div>
       <Script src="/Menu/script.js" defer></Script>
     </div>
