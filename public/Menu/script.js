@@ -18,4 +18,4 @@ sidebarLinks.forEach((link) => {
   });
 });
 
-// Cuenta regresiva
+// Momento WTF 😝

@@ -45,6 +45,12 @@ export default function Menu() {
     };
   }
 
+  const handleButtonClick = () => {
+    const audio = document.getElementById("myAudio");
+    audio.currentTime = 0;
+    audio.play();
+  };
+
   return (
     <div className="wrapper">
       <div className="top_navbar">
@@ -102,11 +108,14 @@ export default function Menu() {
             <li>
               <span className="icon">
                 <i className="">
-                  <Image
-                    src={"/img/fecha-mijipollada.jpg"}
-                    width={100}
-                    height={0}
-                    alt="img fecha-mijipollada"></Image>
+                  <button id="myButton" onClick={handleButtonClick}>
+                    <Image
+                      src={"/img/fecha-mijipollada.jpg"}
+                      width={100}
+                      height={0}
+                      alt="img fecha-mijipollada"></Image>
+                  </button>
+                  <audio id="myAudio" src="/audio/momentoWTF.mp3"></audio>
                 </i>
               </span>
             </li>
@@ -168,11 +177,14 @@ export default function Menu() {
           <li>
             <span className="icon">
               <i className="">
-                <Image
-                  src={"/img/fecha-mijipollada.jpg"}
-                  width={220}
-                  height={0}
-                  alt="img fecha-mijipollada"></Image>
+                <button id="myButton" onClick={handleButtonClick}>
+                  <Image
+                    src={"/img/fecha-mijipollada.jpg"}
+                    width={220}
+                    height={0}
+                    alt="img fecha-mijipollada"></Image>
+                </button>
+                <audio id="myAudio" src="/audio/momentoWTF.mp3"></audio>
               </i>
             </span>
           </li>
