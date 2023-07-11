@@ -267,6 +267,7 @@ div[id] {
     background-image: url("/img/miji-pollada-movil2.png");
     background-size: contain;
     background-repeat: no-repeat;
+    align-items: center;
   }
   #fecha,
   #fecha2 {
@@ -282,9 +283,17 @@ div[id] {
       -2px 2px 0 #000000;
   }
   #fecha3 {
-    margin-bottom: -7px;
+    margin-bottom: -18px;
   }
   #fecha4 {
-    padding-bottom: 350px;
+    padding-bottom: 80px;
+  }
+}
+@media screen and (max-width: 360px) {
+  #fecha3,
+  #fecha4 {
+    line-height: 28px;
+
+    font-size: 26px;
   }
 }
