@@ -55,6 +55,77 @@ export default function Menu() {
         </div>
       </div>
 
+      <div id="movil" className="w-full h-16 hidden">
+        <div id="menu-movil" className="h-14 mb-3 hidden fixed px-7">
+          <ul className="flex items-center justify-between pt-2">
+            <li>
+              <a href="#inicio" className="active">
+                <span className="icon">
+                  <i>
+                    <Image
+                      src={"/img/icons/cronometro.png"}
+                      width={35}
+                      height={0}
+                      alt="icon cronometro"></Image>
+                  </i>
+                </span>
+              </a>
+            </li>
+
+            <li>
+              <a href="#comprar-entrada" className="">
+                <span className="icon">
+                  <i>
+                    <Image
+                      src={"/img/icons/entrada.png"}
+                      width={35}
+                      height={0}
+                      alt="icon cronometro"></Image>
+                  </i>
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="#ubicacion" className="">
+                <span className="icon">
+                  <i>
+                    <Image
+                      src={"/img/icons/mapa.png"}
+                      width={35}
+                      height={0}
+                      alt="icon ubicación"></Image>
+                  </i>
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="#sugar-mijirrito" className="">
+                <span className="icon">
+                  <i>
+                    <Image
+                      src={"/img/icons/sugar-mijirrito.png"}
+                      width={35}
+                      height={0}
+                      alt="icon cronometro"></Image>
+                  </i>
+                </span>
+              </a>
+            </li>
+            <li>
+              <span className="icon">
+                <i className="">
+                  <Image
+                    src={"/img/fecha-mijipollada.jpg"}
+                    width={100}
+                    height={0}
+                    alt="img fecha-mijipollada"></Image>
+                </i>
+              </span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
       <div className="sidebar">
         <ul className="font-md">
           <li>

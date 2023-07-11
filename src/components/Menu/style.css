@@ -236,3 +236,47 @@ div[id] {
     width: 0;
   }
 }
+
+@media screen and (max-width: 520px) {
+  #movil {
+    display: block;
+  }
+  #menu-movil {
+    border: 2px solid black;
+    width: 95.8%;
+    border-radius: 10px;
+    display: block;
+    background: #fffaed;
+  }
+
+  .top_navbar,
+  .hamburger,
+  .sidebar {
+    display: none;
+    width: 0;
+  }
+  .wrapper .main_container {
+    width: 100%;
+    padding-left: 0;
+    margin-left: 0;
+  }
+  .wrapper .main_container .item {
+    height: 98vh;
+  }
+  #inicio {
+    background-image: url("/img/miji-pollada-movil2.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  #fecha {
+    padding-bottom: 15px;
+  }
+  #fecha2 {
+    padding-bottom: 195px;
+  }
+
+  #fecha,
+  #fecha2 {
+    font-size: 24px;
+  }
+}
